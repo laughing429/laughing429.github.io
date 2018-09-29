@@ -87,10 +87,13 @@
 <meta property="og:site_name" content="lyuww&#39;s Home">
 <meta property="og:description" content="当大部分人听到机器学习时，他们描绘出了不同的机器人：一个可靠的管家或者一个终结者。但是机器学习不仅仅是未来的幻想，它已经在这里了。事实上，在一些专业的应用上它已经存在十几年了，例如光学字符识别（OCR）。但是真正成为主流，提高了成千上百万人的生活，在20世纪90年代征服世界的第一个机器学习应用：它就是垃圾邮件筛选。不能说是一个有自我意识的天网，但是在技术上有资格作为机器学习（事实上它学习的非常好，">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-29T01:32:38.022Z">
+<meta property="og:image" content="https://laughing429.github.io/2018/09/26/first-chapter/the_traditional_approach.png">
+<meta property="og:image" content="https://laughing429.github.io/2018/09/26/first-chapter/machine_learning_approach.png">
+<meta property="og:updated_time" content="2018-09-29T02:24:39.716Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一章：机器学习景观">
 <meta name="twitter:description" content="当大部分人听到机器学习时，他们描绘出了不同的机器人：一个可靠的管家或者一个终结者。但是机器学习不仅仅是未来的幻想，它已经在这里了。事实上，在一些专业的应用上它已经存在十几年了，例如光学字符识别（OCR）。但是真正成为主流，提高了成千上百万人的生活，在20世纪90年代征服世界的第一个机器学习应用：它就是垃圾邮件筛选。不能说是一个有自我意识的天网，但是在技术上有资格作为机器学习（事实上它学习的非常好，">
+<meta name="twitter:image" content="https://laughing429.github.io/2018/09/26/first-chapter/the_traditional_approach.png">
 
 
 
@@ -357,7 +360,15 @@
 <p>如果你仅仅只是下载了一个维基百科的副本，你的电脑有更多的数据，但是它不会在任何任务中突然更好。这样，它不是机器学习。（这里的英文感觉怪怪的，欢迎大家自己去看下原文，有好的想法也告诉我）</p>
 <h1>为什么使用机器学习</h1>
 <p>考虑下使用传统的编程技术你怎样写一个垃圾邮件过滤器：</p>
-<p>![the traditional approach](the traditional approach.png)</p>
+<ol>
+<li>首先你要看下典型的垃圾邮件长什么样子。你可能会注意到一些单词或者短语在主题中出现很多次。可能你也会在发送者名字，邮件主体等等内容中注意到一些其他的样式。</li>
+<li>你将为每一个你注意到的样式写一个识别算法，如果许多这些样式被识别出来了，你的程序将标记邮件为垃圾邮件。</li>
+<li>你将测试你的程序，并且重复第一步，第二步直到它足够的好。</li>
+</ol>
+<p><img src="/2018/09/26/first-chapter/the_traditional_approach.png" alt="the traditional approach"></p>
+<p>尽管这个问题是很琐碎的，但是你的程序似乎变成一个很长的复杂规则清单——非常难维护。</p>
+<p>相反，一个基于机器学习的垃圾邮件过滤器自动从垃圾邮件和正常邮件中学习出什么单词和短语的不寻常词频，能比较好的用来识别垃圾邮件。程序是非常短的，很容易维护，并且大部分更加准确。</p>
+<p><img src="/2018/09/26/first-chapter/machine_learning_approach.png" alt="machine learning approach"></p>
 <p>--未完待续--</p>
 
       
