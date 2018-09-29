@@ -342,28 +342,15 @@
       
         
           
-            <p>当大部分人听到机器学习时，他们描绘出了不同的机器人：一个可靠的管家或者一个终结者。但是机器学习不仅仅是未来的幻想，它已经在这里了。事实上，在一些专业的应用上它已经存在十几年了，例如光学字符识别（OCR）。但是真正成为主流，提高了成千上百万人的生活，在20世纪90年代征服世界的第一个机器学习应用：它就是垃圾邮件筛选。不能说是一个有自我意识的天网，但是在技术上有资格作为机器学习（事实上它学习的非常好，以至于你不用再去标记垃圾邮件）。紧跟其后，成千上万的机器学习应用现在安静且强大的在你日常使用的产品和特性中发挥作用，从推荐系统到语音搜索。</p>
-<p>机器学习从哪里开始，又在哪里结束呢？机器去学习的东西究竟意味着什么？如果我下载了一份维基百科的数据，计算机真的能学到什么吗？它是突然更加智能吗？在这一章我们将开始阐明什么是机器学习，为什么你可能想要去使用它。</p>
-<p>下面，在我们启程去探索机器学习大陆之前，我们将看看地图，了解一些主要的地域和最显著的地标：监督学习与非监督学习，在线学习和批量学习，基于实例与基于模型的学习。然后我们将看看一个典型的机器学习项目的工作流程，讨论你们可能要面对的主要挑战，然后涵盖怎么去评估和对机器学习系统进行调参。</p>
-<p>这一章介绍了许多基础概念（行话），这些东西是每个数据科学家要牢记于心的。站在高处对机器学习进行概述（唯一没有许多代码的章节），所有的这些相当简单，但是在你继续阅读本书剩下内容之前，你应该要确保这里每一点都是很透彻的。因此喝起咖啡吧，让我们开始！</p>
-<h1>什么是机器学习？</h1>
-<p>机器学习是计算机编程科学，因此他们能从数据中学习。</p>
-<p>例如，你们的垃圾邮件筛选是一个从垃圾邮件和正常邮件例子中学习的机器学习程序。系统用来学习的例子被称为训练集。每一个训练例子被称为训练实例（或者叫样例）。在这个例子中，任务T是为新的邮件标记是否是垃圾邮件。经验E是训练数据，性能指标P需要被定义；例如，你能用邮件分类的正确率。这个特别的性能标准指标被称作准确率，也被经常在分类任务中使用。</p>
-<p>如果你仅仅只是下载了一个维基百科的副本，你的电脑有更多的数据，但是它不会在任何任务中突然更好。这样，它不是机器学习。（这里的英文感觉怪怪的，欢迎大家自己去看下原文，有好的想法也告诉我）</p>
-<h1>为什么使用机器学习</h1>
-<p>考虑下使用传统的编程技术你怎样写一个垃圾邮件过滤器：</p>
-<ol>
-<li>首先你要看下典型的垃圾邮件长什么样子。你可能会注意到一些单词或者短语在主题中出现很多次。可能你也会在发送者名字，邮件主体等等内容中注意到一些其他的样式。</li>
-<li>你将为每一个你注意到的样式写一个识别算法，如果许多这些样式被识别出来了，你的程序将标记邮件为垃圾邮件。</li>
-<li>你将测试你的程序，并且重复第一步，第二步直到它足够的好。</li>
-</ol>
-<p><img src="/2018/09/26/first-chapter/the_traditional_approach.png" alt="the traditional approach"></p>
-<p>尽管这个问题是很琐碎的，但是你的程序似乎变成一个很长的复杂规则清单——非常难维护。</p>
-<p>相反，一个基于机器学习的垃圾邮件过滤器自动从垃圾邮件和正常邮件中学习出什么单词和短语的不寻常词频，能比较好的用来识别垃圾邮件。程序是非常短的，很容易维护，并且大部分更加准确。</p>
-<p><img src="/2018/09/26/first-chapter/machine_learning_approach.png" alt="machine learning approach"></p>
-<p>--未完待续--</p>
-
-          
+          当大部分人听到机器学习时，他们描绘出了不同的机器人：一个可靠的管家或者一个终结者。但是机器学习不仅仅是未来的幻想，它已经在这里了。事实上，在一些专业的应用上它已经存在十几年了，例如光学字符识别（OCR）。但是真正成为主流，提高了成千上百万人的生活，在20世纪90年代征服世界的第一个机器学习应用：它就
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/26/first-chapter/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -503,81 +490,16 @@
       
         
           
-            <h1>机器学习的山呼海啸</h1>
-<p>在2006年，Geoffrey Hinton等学者发表了一篇论文，展示了如何训练一个深度神经网络以领先的准确率（98%）去识别出手写数字。他们标榜这个技术为“深度学习”。自20世纪90年代以来，训练一个深度神经网络在当时广泛被认为是不可能的，因此大部分的研究者就放弃了这个想法。这篇论文重新唤起了科学界的兴趣，不久之后，许多新论文表明，深度学习不仅是可能的，而且能够带来令人兴奋的成就，而其他机器学习（ML）技术无法与之相匹配（在强大的计算能力和大量数据的帮助下）。这股热情很快扩展到了许多机器学习的其他领域。
-快进10年，机器学习已经征服了整个行业:如今的高科技产品，它是许多魔法的核心，对你的网页搜索结果排序，为智能手机的语音识别提供动力，推荐视频，Go在比赛中打败世界冠军。在你了解它以前，它将驾驶你的汽车。</p>
-<h1>项目中的机器学习</h1>
-<p>很自然的，你现在对机器学习感到很兴奋，你将爱上参加这个party！
-可能你想给你自制的机器人一个它自己的大脑？使它识别各种各样的脸？或者学习在周围走动？
-或者可能你公司有成千上万的数据（用户日志，财务数据，产品数据，机器传感器数据，热线统计，人力资源报告等等），如果你能知道到哪里去查看，很大的可能你能发掘一些隐藏的宝藏。例如：</p>
-<ul>
-<li>分割顾客来发现最好的市场策略来服务每一组。</li>
-<li>基于相似客户的购买来推荐产品给每一个客户。</li>
-<li>识别哪一个交易可能是诈骗。</li>
-<li>预测下一年的收入。</li>
-<li>and more</li>
-</ul>
-<p>无论是什么理由，我已经决定学习机器学习，然后在你的项目中实施。太棒了的主意了！</p>
-<h1>目标和方法</h1>
-<p>这本书假设你几乎对机器学习一窍不通。它的目标就是给你概念，直觉，和工具，当你需要通过编程从数据中学习知识时。<br>
-我们将覆盖大量的技术，从最简单最常用到一些经常赢的比赛的深度学习技术。
-我们将使用已经开发完好的python框架：</p>
-<ul>
-<li>Scikit-Learn使用起来非常简单，并且它能很高效的实施许多机器学习算法，因此它为学习机器学习提供了很好的切入点。</li>
-<li>TensorFlow是一个更复杂的库，用于使用数据流图进行分布式数值计算。它使得运用成千上万的GPU服务来高效的训练和运行非常大的神经网络成为可能。Tensorflow被创建于Google，支持许多他们大规模的机器学习应用。它在2015年11月被开源。</li>
-</ul>
-<p>本书更偏向于亲自动手的方法，通过对具体的工作例子和一点点理论，来对机器学习增加直观的理解。但是你能不用拿起你的笔记本电脑读这本书，我们强烈的建议你使用Jupyter notebook来实验<a href="https://github.com/ageron/handson-ml" target="_blank" rel="noopener">https://github.com/ageron/handson-ml</a>上的代码例子。</p>
-<h1>先决条件</h1>
-<p>这本书假设你已经有python编程经验，并且你已经对python的主要科学库比较熟悉，特别是<a href="http://www.numpy.org/" target="_blank" rel="noopener">Numpy</a>，<a href="https://pandas.pydata.org/" target="_blank" rel="noopener">Pandas</a>和<a href="https://matplotlib.org/" target="_blank" rel="noopener">Matplotlib</a>。</p>
-<p>如果你关心原理是什么，那么你应该对大学数学有一个合理的理解（微积分，线性代数，概率论和统计学）</p>
-<p>如果你还不知道python，<a href="http://learnpython.org/" target="_blank" rel="noopener">http://learnpython.org/</a>是一个好的地方去开始。官方<a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">python.org</a>的教程也是一个非常好的地方。</p>
-<p>如果你从来没用过Jupyter,第二章将从引导你从安装到进行一些基本的操作：在你的工具箱中它是一个很棒的工具。</p>
-<p>如果你对Python的科学库不熟悉，提供的jupyter notebook包含一些教程。也有一个简短的线性代数教程。</p>
-<h1>线路图</h1>
-<p>这本书被组织为两部分。第一部分，机器学习的基础，包含一下的话题：</p>
-<ul>
-<li>什么是机器学习？它尝试解决什么问题？机器学习系统的主要策略和基本概念是什么？</li>
-<li>一个典型的机器学习项目的主要步骤。</li>
-<li>学习如何使用数据拟合模型。</li>
-<li>优化损失函数。</li>
-<li>处理，清洗和预处理数据。</li>
-<li>选择和特征工程。</li>
-<li>选择一个模型，并使用交叉验证调参。</li>
-<li>机器学习的主要挑战，特别是欠拟合和过拟合（偏差/方差权衡）。</li>
-<li>减少训练数据的维度来对抗维度灾难。</li>
-<li>最常用的学习算法：线性和多项式回归，logistic回归，KNN，支持向量机，决策树，随机森林和集成学习方法。</li>
-</ul>
-<p>第二部分，神经网络和深度学习，包含下列主题：</p>
-<ul>
-<li>什么是神经网络？它们擅长什么？</li>
-<li>使用Tensorflow搭建和训练神经网络。</li>
-<li>最重要神经网络架构：前馈神经网络，卷积神经网络，循环神经网络，长短期记忆网络和自动编码器。</li>
-<li>训练深度神经网络的技术。</li>
-<li>扩展神经网络来适应巨大的数据集。</li>
-<li>强化学习</li>
-</ul>
-<p>第一部分几乎基于Scikit-Learn，第二部分使用Tensorflow。</p>
-<blockquote>
-<p>不要匆忙的跳到深水学习中：毫无疑问深度学习是机器学习中最令人兴奋的领域，你应该首先掌握基础。而且，大部分的问题能运用简单的技术去非常好的解决，例如随机森林和及集成学习方法。深度学习最合适于复杂问题，例如图像识别，语音识别或者自然语言处理，只要提供给你足够的数据，计算能力和耐心。</p>
-</blockquote>
-<h1>其他资源</h1>
-<p>在学习机器学习上有许多的资源可以利用。Andrew Ng在<a href="https://www.coursera.org/learn/machine-learning/" target="_blank" rel="noopener">Coursera上的机器学习课程</a>，Geoffrey Hinton的<a href="https://www.coursera.org/learn/neural-networks" target="_blank" rel="noopener">关于神经网络和深度学习课程</a>是非常精彩的，尽管他们都需要投入大量的时间（想想几个月）。</p>
-<p>也有很多有趣的关于机器学习的网站，包括Scikit-Learn中优秀的<a href="http://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">用户指南</a>。你可能喜欢<a href="https://www.dataquest.io/" target="_blank" rel="noopener">Dataquest</a>，它提供了非常有趣的交互式教程和机器学习博客，例如那些在<a href="http://goo.gl/GwtU3A" target="_blank" rel="noopener">Quora</a>上展示出的。最后，<a href="http://deeplearning.net/" target="_blank" rel="noopener">Deep Learning website</a>也有陈列了一些好的资源去学习更多的知识。</p>
-<p>当然也有许多其他介绍机器学习的书，尤其是：</p>
-<ul>
-<li>Joel Grus, 《<a href="http://shop.oreilly.com/product/0636920033400.do" target="_blank" rel="noopener">Data Science from Scratch </a>》（O’Reilly）。这本书呈现了机器学习的基础和用纯python实现了一些主要的算法（从小白，就像它的书名）。</li>
-<li>Stephen Marsland，《Machine Learning: An Algorithmic Perspective》。这本书是一本很棒的介绍机器学习的书籍，深度的覆盖了一些话题，并且用python实现了一些代码用例。</li>
-<li>Sebastian Raschka，《Python Machine Learning 》。也是一本很棒的介绍机器学习的书籍，这本书完全利用了python的开源库。</li>
-<li>Yaser S. Abu-Mostafa, Malik Magdon-Ismail, and Hsuan-Tien Lin,《Learning from
-Data 》。作为机器学习的理论方法，这本书提供了一个深度的见解，特别是在偏差/方差权衡上。</li>
-<li>Stuart Russell and Peter Norvig，《Artifcial Intelligence: A Modern Approach》。这是一本很棒很宏伟的书，不可思议的覆盖了大量的话题，包括机器学习。它使得机器学习是如此的透彻。</li>
-</ul>
-<p>最终，一个很帮的学习方式是参加机器学习比赛，例如<a href="https://www.kaggle.com/" target="_blank" rel="noopener">Kaggle</a>，这个将允许实践你的技能在真是世界的问题上，在那里你能得到最好的机器学习专家的帮助和见解。</p>
-<blockquote>
-<p>前言里面的一些感谢的内容就不翻译了,希望读者在发现错误后能在我的<a href="https://github.com/laughing429/lyuww" target="_blank" rel="noopener">github</a>上给我留言，感谢。</p>
-</blockquote>
-
-          
+          机器学习的山呼海啸
+在2006年，Geoffrey Hinton等学者发表了一篇论文，展示了如何训练一个深度神经网络以领先的准确率（98%）去识别出手写数字。他们标榜这个技术为“深度学习”。自20世纪90年代以来，训练一个深度神经网络在当时广泛被认为是不可能的，因此大部分的研究者就放弃了这个想法。这
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/24/preface/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -695,11 +617,16 @@ Data 》。作为机器学习的理论方法，这本书提供了一个深度的
       
         
           
-            <p>最近一直在看一本书《<a href="https://book.douban.com/subject/26840215/" target="_blank" rel="noopener">Hands On Machine Learning with Scikit Learn and TensorFlow</a>》，很喜欢这本书。一方面有自己感兴趣的机器学习，另一方面很想提升自己的英语水平。毕竟程序员这个职业需要大量的接触到英文。</p>
-<p>下班后一直在想怎么去坚持让自己做这件事情，毕竟读英语教材是一件很枯燥，很容易让人烦躁的。于是就决定开通一个博客专门翻译这本书，一方面激励自己去完成，一方面也希望让更多的同学们也能看到这本书里面的知识。</p>
-<p>由于自己的才疏学浅，在翻译的过程中难免会有各种问题。希望读者在发现错误后能在我的<a href="https://github.com/laughing429/lyuww" target="_blank" rel="noopener">github</a>上给我留言。我也希望能与大家交流，向大家学习。</p>
-
-          
+          最近一直在看一本书《Hands On Machine Learning with Scikit Learn and TensorFlow》，很喜欢这本书。一方面有自己感兴趣的机器学习，另一方面很想提升自己的英语水平。毕竟程序员这个职业需要大量的接触到英文。
+下班后一直在想怎么去坚持让自己做这件事情，
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/09/21/千里之行，始于足下/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
