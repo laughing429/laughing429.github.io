@@ -89,7 +89,8 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://laughing429.github.io/2018/09/26/first-chapter/the_traditional_approach.png">
 <meta property="og:image" content="https://laughing429.github.io/2018/09/26/first-chapter/machine_learning_approach.png">
-<meta property="og:updated_time" content="2018-09-29T02:24:39.716Z">
+<meta property="og:image" content="https://laughing429.github.io/2018/09/26/first-chapter/machine_learning_can_help_humans_learn.png">
+<meta property="og:updated_time" content="2018-10-09T03:50:14.187Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一章：机器学习景观">
 <meta name="twitter:description" content="当大部分人听到机器学习时，他们描绘出了不同的机器人：一个可靠的管家或者一个终结者。但是机器学习不仅仅是未来的幻想，它已经在这里了。事实上，在一些专业的应用上它已经存在十几年了，例如光学字符识别（OCR）。但是真正成为主流，提高了成千上百万人的生活，在20世纪90年代征服世界的第一个机器学习应用：它就是垃圾邮件筛选。不能说是一个有自我意识的天网，但是在技术上有资格作为机器学习（事实上它学习的非常好，">
@@ -367,8 +368,26 @@
 </ol>
 <p><img src="/2018/09/26/first-chapter/the_traditional_approach.png" alt="the traditional approach"></p>
 <p>尽管这个问题是很琐碎的，但是你的程序似乎变成一个很长的复杂规则清单——非常难维护。</p>
-<p>相反，一个基于机器学习的垃圾邮件过滤器自动从垃圾邮件和正常邮件中学习出什么单词和短语的不寻常词频，能比较好的用来识别垃圾邮件。程序是非常短的，很容易维护，并且大部分更加准确。</p>
-<p><img src="/2018/09/26/first-chapter/machine_learning_approach.png" alt="machine learning approach"></p>
+<p>相反，一个基于机器学习的垃圾邮件过滤器自动从垃圾邮件和正常邮件中学习出什么单词和短语的不寻常词频，能比较好的用来识别垃圾邮件。程序是非常短的，很容易维护，并且大部分更加准确。<br>
+<img src="/2018/09/26/first-chapter/machine_learning_approach.png" alt="machine learning approach"></p>
+<p>另一个机器学习闪光的领域是，传统算法太过于复杂并且不知道运用什么算法。例如，思考一下语音识别：从一个简单的开始，写一个程序能区别单词“one”和“two”。你可能注意到单词“two”有一个高音“T”开始，因此你能硬编码一个算法，通过衡量高音的强度来区别所有的one和two。很明显这种方法不能扩展到成千上万的单词，尤其是几十种语种，并且在嘈杂的环境下被许多不同的人说出来。最好的解决办法（至少在今天）是写一个算法让程序自己去学习，通过给定的每一个单词的录音例子。</p>
+<p>最终，机器学习能帮助人们去学习：机器学习算法能被检查去看到底他们学习到了什么（尽管对于一些算法这会有点严峻）。例如，一旦垃圾邮件过滤器被足够的垃圾邮件训练后，它能很容易的被监测出哪些单词和词组能最好的揭示垃圾邮件。有时这将揭示出一些没有意料到的关系或者趋势，从而能对问题有一个更好的理解。
+<img src="/2018/09/26/first-chapter/machine_learning_can_help_humans_learn.png" alt="machine_learning_can_help_humans_learn"></p>
+<p>应用机器技术在大量的数据中去挖掘能帮助发现一些不明显的模式。这被称作数据挖掘。</p>
+<p>总结，机器学习擅长的事情有：</p>
+<ul>
+<li>需要大量手动调整或者规则清单的问题：一个机器算法代码更简洁，并且性能更好。</li>
+<li>无法使用传统方法找到好的解决方案的复杂问题：最好的机器学习技术能找到解决办法。</li>
+<li>变动的环境：一个机器学习系统能适应新的数据。</li>
+<li>能在复杂问题和大量数据中得到见解。</li>
+</ul>
+<h1>机器学习系统的类型</h1>
+<p>基于一下广泛的策略，机器学习系统能被分类成许多不同的类型：</p>
+<ul>
+<li>是否他们需要基于人类的监督被训练（监督学习，非监督学习，半监督学习和强化学习）</li>
+<li>是否他们能持续的增量学习（在线与批次学习）</li>
+<li></li>
+</ul>
 <p>--未完待续--</p>
 
       
@@ -400,8 +419,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/09/24/preface/" rel="next" title="前言">
-                <i class="fa fa-chevron-left"></i> 前言
+              <a href="/2018/09/21/千里之行，始于足下/" rel="next" title="千里之行，始于足下">
+                <i class="fa fa-chevron-left"></i> 千里之行，始于足下
               </a>
             
           </div>
@@ -558,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">什么是机器学习？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">为什么使用机器学习</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">什么是机器学习？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">为什么使用机器学习</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">3.</span> <span class="nav-text">机器学习系统的类型</span></a></li></ol></div>
             
 
           </div>
